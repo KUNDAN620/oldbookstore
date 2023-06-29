@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(../upload/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+form{
+    box-shadow: 2px 6px 100px #ffffff;
+}
+.w-50{
+    widtnjknkh:20%!important;
+}
+
+@media (max-width: 768px){
+.container, .container-md, .container-sm, .w-50{
+    width:98%!important;
+}
+
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+   
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-0.5 * var(--bs-gutter-y));
+    margin-right: calc(-0.3 * var(--bs-gutter-x));
+    margin-left: calc(-0.3 * var(--bs-gutter-x));
+}
+.my-2 {
+    margin-top: 0.5rem!important;
+    margin-bottom: 3.7rem!important;
+}
+

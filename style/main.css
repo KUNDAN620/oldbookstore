@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  
+  
+
+}
+
+.s{
+  box-shadow: none;
+  margin-left: 104px;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 60px;
+  display: flex;
+  align-items: center;
+}
+.bar{
+  width: 100%;
+  height: 34px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 30px;
+  text-align: center;
+}
+.bar2{
+ 
+  width: 51px;
+  height: 34px;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+  
+  transform: scaleX(0.9);
+  background: aquamarine;
+
+}
+
+.head1{
+  width: 100%;
+  
+}
+
+.navbar1{
+   display: inline-block;
+    background:rgb(10 30 66);
+    height:50px;
+    width: inherit;
+
+}
+
+label.logo{
+    color:white;
+    font-size: 22px;
+    font-weight: bold;
+    height: 50px;
+  padding-left: 10px;
+    line-height: 50px;
+    }
+.navul{
+  display: flex;
+    float: right;
+    margin-right:50px;
+    
+}
+.navli {
+  font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+
+}
+.navli a{
+    color:white;
+    font-size: 17px;
+    padding: 2px 5px;
+    text-decoration: none;
+    
+
+}
+a.active,a:hover{
+    background-color: red;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    display: none;
+    cursor: pointer;
+
+}
+#check{
+    display: none;
+
+}
+
+@media (max-width:1200px){
+  .foot{
+    position: unset;
+  }
+    .checkbtn{
+        display:block ;
+   
+    }
+  
+    .navul{
+      display: inline-block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        background-color: green;
+        top:50px;
+        left:-100%;
+        transition:all .5s;
+    }
+    .navli{
+        display: block;
+        
+    }
+
+
+#check:checked ~ .navul{
+    left:0;
+}
+.section{
+    
+    flex-direction: column;
+}
+}
+
+
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    border:2px solid red;
+  }
+
+
+
+  .footer-basic {
+   
+    
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightgray;
+  color: #4b4c4d;
+  text-align: center;
+  }
+  
+  .footer-basic ul {
+    display: flex;
+    flex-direction: row;
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+    justify-content: center;
+  }
+  
+   .footer-basic ul li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    
+    color: #110b1c;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top: 2px;
+    text-align: center;
+    font-size: 21px;
+    color: #110b1c;
+    margin-bottom: 0;
+    font-family: cursive;
+  }
+  
+  .foot{
+  
+    height: 100px;
+    width: 100%;
+   
+    margin-top: 2rem;
+   
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .foot{
+      position: unset;
+    }
+  }
+
+  .card_img img:hover{
+    border:3px solid red;
+  }
+
+  .p-3 {
+  border: solid;
+  padding: 1rem!important;
+  background: linear-gradient(321deg, black,transparent);
+  font-size: 17px;
+}

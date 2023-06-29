@@ -1,0 +1,169 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+text-decoration: none;
+
+}
+
+
+.section{
+	
+	
+
+	
+	
+}
+.section1{
+	
+	background-lor: aqua;
+	height: 800px;
+	float: left;
+	width: 25%;
+	align-items: center;
+
+}
+.section2{
+
+	width: 70%;
+	height: 800px;
+	float: right;
+	overflow:auto;
+	
+}
+
+.section3{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background: solid;
+	background-color: black;
+	float: right;
+}
+
+
+@media all and (max-width: 600px) {
+	.section{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.section2,.section1{
+		margin-bottom: 10px;
+		
+		width: 100%;
+
+		overflow: visible;
+		
+	}
+	
+}
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	text-transform: capitalize;
+	transition: all .2s linear;
+}
+
+*::selection{
+	background: var(--yellow);
+	color: #333;
+
+}
+
+html{
+	font-size: 62%;
+	overflow-x: hidden;
+
+}
+html::-webkit-scrollbar{
+	width:1.4rem;
+
+}
+html::-webkit-scrollbar-track{
+	background: #222;
+
+}
+html::-webkit-scrollbar-thumb{
+	background: var(--yellow);
+
+}
+body{
+	backgund: #111;
+	overflow-x: hidden;
+}
+
+header{
+	posion: fixed;
+	top: 50;left: 0;
+	z-index: 1000;
+	height: 100%;
+	width:auto;
+	display: flex;
+	background: #1a1a1a;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+	text-align: center;
+}
+header .user img{
+	height: 17rem;
+	width: 17rem;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 1rem;
+	border: 7rem solid var(--yellow);
+
+
+}
+
+header .user .name{
+	font-size: 3.5rem;
+	color: #fff;
+
+
+}
+header .user .post{
+	font-size: 2rem;
+	color: #eee;
+}
+header .navi{
+	width: 100%;
+
+}
+header .navi ul{
+	list-style: none;
+	padding: 1rem 3rem;
+
+}
+header .navi ul li .a-btn,.delete-btn{
+	display: block;
+	padding: 1rem;
+	margin: 1.5rem 0;
+	background: #fff;
+	font-size: 2rem;
+	border-radius: 5rem;
+	color: black;
+border: solid;
+
+}
+
+
+header .navi ul li .delete-btn:hover{
+
+color: red;
+}
+
+header .navi ul li a:hover{
+	background: var(--yellow);
+    color: blueviolet;
+
+}
